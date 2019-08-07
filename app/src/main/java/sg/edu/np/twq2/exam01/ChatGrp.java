@@ -28,9 +28,4 @@ public class ChatGrp {
     public void setTime(String time) {
         this.time = time;
     }
-
-    public String getID()
-    {
-        return title;
-    }
 }

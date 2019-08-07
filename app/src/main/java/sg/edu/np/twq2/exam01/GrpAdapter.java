@@ -33,9 +33,9 @@ public class GrpAdapter extends RecyclerView.Adapter<GrpViewHolder> {
     public void onBindViewHolder(@NonNull GrpViewHolder grpViewHolder, final int i) {
         ChatGrp cg = data.get(i);
 
-        grpViewHolder.title.setText("Title " + i);
-        grpViewHolder.msg.setText("" + i);
-        grpViewHolder.time.setText("" + i + ":00");
+        grpViewHolder.title.setText(cg.getTitle());
+        grpViewHolder.msg.setText(cg.getLastMsg());
+        grpViewHolder.time.setText(cg.getTime());
 
         grpViewHolder.v.setOnClickListener(new View.OnClickListener() {
             @Override
